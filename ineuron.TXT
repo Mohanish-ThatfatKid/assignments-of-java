@@ -1,0 +1,87 @@
+public class ineuron {
+    public static void main(String[] args) {
+        int ne = 7;
+        for(int i = 0;i<ne;i++)
+        {
+            for(int j = 0;j<ne;++j)
+            {
+                if(i==0 || j==ne/2 || i == 6){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.print("    ");
+            
+            for(int j  = 0; j<ne;j++){
+                if(j == 0 || j == 6 || (i==1 && j == 1)|| (i==2 && j == 2)|| (i==3 && j == 3)|| (i==4 && j == 4)|| (i==5 && j == 5))
+                {
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+
+                }
+
+            }
+            System.out.print("  ");
+            for(int j = 0;j<ne;j++){
+                if(i == 0 || i == 6 || j == 0 || i == ne/2 ){
+                    System.out.print("* ");
+
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.print("   ");
+            for(int j =0;j<ne;j++){
+                if(j == 0 || i == 6 || j == 6){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.print("   ");
+
+            for(int j= 0; j<ne;j++){
+                if(
+                    j==0 || i == 0 || (i == 1 && j==6) || (i==2&&j == 6)||i == ne/2 || (i == 4 && j == 3) || (i == 5 && j == 4) || (i == 6 && j == 5)
+                ){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+
+                }
+
+            }
+            System.out.print("   ");
+            for(int j =0;j<ne;j++){
+                if(i == 0 ||j ==6 || i==6||j==0){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }     
+            }
+            System.out.print("    ");
+            
+            for(int j  = 0; j<ne;j++){
+                if(j == 0 || j == 6 || (i==1 && j == 1)|| (i==2 && j == 2)|| (i==3 && j == 3)|| (i==4 && j == 4)|| (i==5 && j == 5))
+                {
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+
+                }
+
+            }
+            System.out.println();
+    }
+}
+    
+}

@@ -1,0 +1,77 @@
+public class assignment {
+    public static void main(String[] args) {
+    
+       // for T
+        int t = 7;
+        for(int i = 0;i<t;i++)
+        {
+            for(int j = 0;j<t;++j)
+            {
+                if(i==0 || j==t/2){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.print("   ");
+            for(int j = 0;j<t;j++){
+                if(i == 0 || i == 6 || j == 0 || i == t/2 ){
+                    System.out.print("* ");
+
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.print("   ");
+            for(int j = 0; j<t;j++){
+                if(j == 0 || i == 6){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+
+                }
+            }
+            System.out.print("   ");
+            for(int j =0;j<t;j++){
+                if(j == 0 || i == 6 || j == 6){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.print("   ");
+            for(int j = 0;j<t;j++){
+                if(i == 0 || i == 6 || (i==1 &&j ==0) || i == t/2 ||(i == 2 && j == 0) || (i==4 && j==6)||(i==5 && j==6)){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.print("   ");
+            for(int j=0;j<t;j++){
+                if(j==0 ||(i == 0 && j== 4)||(i==1 && j==3)||(i==2 && j==2) || (i ==3 && j==1)||(i==4 && j == 2)|| (i==5 && j ==3)|| (i==6 && j ==4)){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.print("   ");
+            for(int j =0;j<t;j++){
+                if(i == 0 ||j ==6 || i==6||j==0){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }     
+            }
+            System.out.println();
+        }
+      }
+    }
+    
